@@ -8,17 +8,17 @@ import org.testcontainers.containers.PostgreSQLContainer;
 public class BeanTestContainersTestConfiguration {
 
     @Bean
-    static PostgreSQLContainer container1() {
+    public PostgreSQLContainer container1() {
         return new PostgreSQLContainer<>("postgres:16");
     }
 
     @Bean
-    static PostgreSQLContainer container2() {
+    public PostgreSQLContainer container2() {
         return new PostgreSQLContainer<>("postgres:16");
     }
 
     @Bean
-    static PostgreSQLContainer container3() {
+    public PostgreSQLContainer container3() {
         return new PostgreSQLContainer<>("postgres:16");
     }
 }
